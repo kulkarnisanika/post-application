@@ -1,7 +1,7 @@
 # 📬 Post Manager App
 
 A simple React-based CRUD app that manages posts using the [JSONPlaceholder](https://jsonplaceholder.typicode.com/) fake REST API. This project demonstrates how to perform Create, Read, Update, and Delete operations with a clean UI using Tailwind CSS.
-
+Live Project: https://kulkarnisanika.github.io/post-application/
 ---
 
 ## 🚀 Features
