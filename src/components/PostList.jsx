@@ -130,7 +130,7 @@ const PostList = () => {
                         />)
                     }
                 </div>
-                <div className="m-2">
+                <div className="bg-teal-950 shadow-sm sticky top-0 m-2">
                     <PostForm
                         isEdit={isEdit}
                         formData={formData}
