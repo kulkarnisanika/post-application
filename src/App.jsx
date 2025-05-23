@@ -5,10 +5,9 @@ function App() {
 
 
   return (
-    <div className='bg-green-500'>
+    <div className='p-1 bg-teal-950'>
       <PostList />
     </div>
-      
   )
 }
 

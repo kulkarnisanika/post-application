@@ -1,13 +1,13 @@
 import React from "react";
 
-const Post = ({ title, description, actionHandler}) => {
+const Post = ({ id,title, description, actionHandler}) => {
 
     
     return (
         <>
             <div className="bg-teal-900 p-7 rounded grid grid-cols-1">
+                <div><h5 className="bg-cyan-800 text-white font-serif p-2 text-center  px-2 w-full">{`<< ${id} >>`}</h5></div>
                 <div>
-                   
                     <h3 className="text-white text-2xl font-bold">{title}</h3>
                 </div>
                 <p className="text-white">{description}</p>
