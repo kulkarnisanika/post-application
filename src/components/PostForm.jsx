@@ -2,8 +2,6 @@ import React, { useState, useEffect } from "react"
 
 const PostForm = ({isEdit, formData, primaryButtonClickHandler }) => {
 
-    console.log("from form ", formData)
-
     const [inputData, setInputData] = useState({});
 
     useEffect(() => {
@@ -11,9 +9,6 @@ const PostForm = ({isEdit, formData, primaryButtonClickHandler }) => {
       setInputData(formData);
     }
   }, [formData]);
-
-
-    console.log("inputdata",inputData)
 
     const handleInputChange = (e) => {
         setInputData(prev => (
@@ -28,9 +23,9 @@ const PostForm = ({isEdit, formData, primaryButtonClickHandler }) => {
     return(
         <>
          <form onSubmit={(e) => e.preventDefault()}>
-            <input type="text" onChange={handleInputChange} name="title" value={inputData?.title?.title}>
+            <input type="text" onChange={handleInputChange} name="title" value={inputData?.title}>
             </input>
-            <input type="text" onChange={handleInputChange} name="description" value={inputData?.description?.body}>
+            <input type="text" onChange={handleInputChange} name="description" value={inputData?.description}>
             </input>
             <button onClick={() => primaryButtonClickHandler(inputData)}>{isEdit ? "Edit" : "Add" }</button>
         </form>
